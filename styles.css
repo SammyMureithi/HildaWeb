@@ -1,0 +1,300 @@
+*{
+    margin:  0px ;
+}
+body{
+    background-color: #fac5ee;
+}
+header{
+    width: 100%;
+    height: 80vh;
+    background-color: #fac5ee;
+}
+.headerContent{
+    position: relative;
+    background-image: url("images/1.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    background-color:rgba(250,197,238,255) ;
+    opacity: 0.5;
+}
+.nav{
+    display: none;
+}
+.nav li{
+    list-style: none;
+    display: flex;
+    
+}
+.nav li a{
+   padding: 10px 19px;
+   text-decoration: none;
+   color: black;
+   font-weight: 800;
+   font-size: 1.2rem;
+}
+.menu{
+    float: right;
+    margin-right: 1.5rem;
+}
+.intoduction{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+span{
+    font-size: 3rem;
+    color: red;
+    font-weight:700;
+}
+.intoduction h1{
+    color: rgba(250,197,238,255) ;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.intoduction p{
+    color: white;
+   
+}
+.intoduction button{
+    margin-top: 2rem;
+    padding: 0.625rem 1.1875rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #fac5ee 0%, #d372a2 100%)
+}
+.midSection{
+    margin: 0px auto;
+    display:flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 80vw;
+    margin-top: 2rem;
+    border: solid white 3px;
+    border-radius: 12px;
+}
+.midSection img{
+   align-self: center;
+    width: 80vw;
+    margin-left: 0.6em;
+    max-width: 200px;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 18px;
+}
+.myProfession{
+   text-align: center;
+}
+.myProfession h1 ,.projects>h1{
+    font-size: 3rem;
+    color: white;
+    text-decoration: overline solid greenyellow;
+}
+.paragrap p{
+    line-height: 1.5em;
+    width: 70vw;
+    max-width: 60vw;
+    margin: 0px auto;
+    
+}
+.paragrap{
+    background-color: #fac5ee;
+    opacity: 0.7;
+}
+.projects{
+    margin-top: 2rem;
+   text-align: center;
+}
+.project{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.project img{
+    width: 90%;
+    margin-top: 2rem;
+}
+.visibleProject> h1{
+    margin: 0px auto;
+    margin-top: 0.625rem;
+    background-color: white;
+    width: fit-content;
+    border-radius: 12px;
+    padding: 8px 10px;
+}
+.invisibleProject> h1{
+    margin: 0px auto;
+    margin-top: 0.625rem;
+    background-color: white;
+    width: fit-content;
+    border-radius: 12px;
+    padding: 8px 10px;
+}
+
+.project-description p{
+    width: 80%;
+    line-height: 1.5rem;
+    margin: 0px auto;
+}
+footer{
+    margin-top: 1.3rem;
+    height: 30vh;
+    color: white;
+    background-color: black;
+   border-top: solid 2px white;
+}
+.footerContent{
+    padding-top: 1.3rem;
+}
+.footerContent h3{
+    text-align: center;
+}
+.socialMedia{
+   justify-content: center;
+    margin-top: 1.0rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1.3rem;
+}
+.socialMedia img{
+    margin-right: .5rem;
+}
+footer p{
+    text-align: center;
+}
+.footerContent h1{
+    text-align: center;
+    color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .headerContent{
+        background: url("images/1.jpeg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-color: #fac5ee;
+        max-width: 1800px;
+        margin: 0px auto;
+    }
+    nav{
+        float: right;
+        background:none;
+        opacity: 1;
+    }
+    nav img{
+        display: none;
+    }
+    .largerNav{
+        display: flex;
+        margin-top: 20px;
+    }
+    .largerNav ul{
+        display:none;
+        flex-direction: row;
+    }
+    .largerNav li a{
+        margin-right: 2rem;
+        color: white;
+    
+    }
+    .hover{
+        padding: 10px 19px;
+        background-color: greenyellow;
+        margin-right: 2rem;
+        color: white; 
+        text-align: center; 
+        border-radius: 12px;
+    }
+    .midSection{
+        margin: 0px auto;
+        width: 70vw;
+        display:flex;
+        flex-direction: row;
+        height: 50vh;
+        margin-top: 2rem;
+        border: solid white 3px;
+    }
+    .myProfession{
+        align-items: center;
+        margin-top: 5%;
+       
+    }
+    .paragrap p{
+        width: 80%;
+    }
+    .projo{
+        display: flex;
+        flex-wrap: wrap;
+       max-width: 1500px;
+       justify-content: center;
+       height: fit-content;
+    }
+    .project{
+        display: relative;
+        width: 25%;
+        padding: 10px;
+    }
+    .project img{
+        width: 100%;
+        min-height: 50%;
+    }
+    .project-description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        background-color: #fac5ee;
+        opacity: 0.5;
+        display: none;
+    }
+    .invisibleProject{
+        display: none;
+    }
+    .visibleProject{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        background-color: #fac5ee;
+        opacity: 0.5;
+        display: block;
+    }
+    .project-description h1{
+        color: white;
+        background-color: black;
+    }
+    .projects>h1{
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+        text-decoration: overline solid greenyellow;
+    }
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerContent h1{
+        text-decoration: overline solid greenyellow;
+    }
+    .sociaMedias{
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+    }
+}
