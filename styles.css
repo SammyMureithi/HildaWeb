@@ -4,11 +4,12 @@
 body{
     background-color: #fac5ee;
 }
-header{
+.header{
     width: 100%;
     height: 80vh;
     background-color: #fac5ee;
 }
+
 .headerContent{
     position: relative;
     background-image: url("images/1.jpeg");
@@ -17,6 +18,8 @@ header{
     background-position: center;
     background-size: cover;
 }
+
+
 nav{
     background-color:rgba(250,197,238,255) ;
     opacity: 0.5;
@@ -145,7 +148,7 @@ span{
 }
 footer{
     margin-top: 1.3rem;
-    height: 30vh;
+    height: fit-content;
     color: white;
     background-color: black;
    border-top: solid 2px white;
@@ -173,9 +176,98 @@ footer p{
     text-align: center;
     color: white;
 }
+.aboutP{
+    position: relative;
+    background-image: url("images/2.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.PhotoAddict{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.654rem;
+    border: solid white 0.15rem;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.8rem;
+    padding-top: 2rem;
+    width: 90vw;
+    margin:2rem  auto auto;
+}
+.photoTestimonial h1{
+font-size: 3rem;
+color: white;
+text-decoration: overline solid greenyellow;
+margin-bottom: 2rem;
+}
+.photoTestimonial p{
+    max-width: 80%;
+    margin: 0px auto;
+    
+}
+.PhotoAddict img{
+    width: 80%;
+    margin: 0px auto;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+}
+.myFavarites>h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: overline solid white;
+    margin-bottom: 2rem;
+}
+.ContactUs{
+    background: none;
+}
+.Contact{
+  text-align: center;
+}
+.Contact h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: white;
+    text-decoration: overline solid greenyellow;
+    margin-bottom: 2rem;
+}
+.Contact img{
+    width: 60vw;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 60vw;
+    color: red;
+}
+.myForm input{
+  
+    width: 60vw;
+    height: 4vw;
+}
+.myForm button{
+    margin-top: 12px;
+    padding: 10px 19px;
+    width: fit-content;
+    border: solid red 4px;
+    border-radius: 12px;
+    font-size: 1.52rem;
+    font-weight: 700;
+    background-color: black;
+    opacity: 0.5;
+    color: #fac5ee;
 
-
+}
 @media only screen and (min-width: 768px) {
+    .Contact{
+        text-align: center;
+    }
+
     .headerContent{
         background: url("images/1.jpeg") no-repeat center center fixed; 
         -webkit-background-size: cover;
@@ -186,6 +278,7 @@ footer p{
         max-width: 1800px;
         margin: 0px auto;
     }
+    
     nav{
         float: right;
         background:none;
@@ -296,5 +389,38 @@ footer p{
         display: flex;
         flex-direction: row;
        justify-content: center;
+    }
+    .aboutP{
+        position: relative;
+        background-image: url("images/2.jpeg");
+        background-color: #cccccc;
+        height: 100%;
+        background-position: 55% 45%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .PhotoAddict{
+        display: flex;
+        flex-direction: row;
+        border-radius: 0.654rem;
+        border: solid white 0.15rem;
+        margin-top: 1rem;
+        text-align: center;
+        line-height: 1.8rem;
+        height: 50vh;
+        padding-top: 2rem;
+        margin:2rem  auto auto;
+        max-width: 900px;
+        padding-right: 2rem;
+    }
+    .PhotoAddict img{
+       padding-left: 3rem;
+        height: 100%;
+   
+    }
+    .photoTestimonial{
+        justify-content: center;
+        align-self: center;
     }
 }
