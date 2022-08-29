@@ -15,7 +15,7 @@ body{
     background-image: url("images/1.jpeg");
     height: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -287,6 +287,7 @@ margin-bottom: 2rem;
         max-width: 1800px;
         margin: 0px auto;
         background-attachment: fixed;
+       
     }
     
     nav{
