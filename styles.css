@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -285,6 +286,7 @@ margin-bottom: 2rem;
         background-color: #fac5ee;
         max-width: 1800px;
         margin: 0px auto;
+        background-attachment: fixed;
     }
     
     nav{
